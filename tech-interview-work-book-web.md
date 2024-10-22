@@ -221,42 +221,6 @@ In this example, the `greet` function has two parameters (`name` and `greeting`)
 ### Compatibility Note:
    
 Default function parameters are part of ECMAScript 6 (ES6) and are supported in modern browsers and Node.js versions. However, if you need to ensure compatibility with older environments, it's essential to consider transpiling your code using tools like Babel or using other techniques to achieve similar functionality.
-ES6 introduces the concept of default function parameters, allowing you to assign default values to parameters in a function declaration. If a parameter is not provided or is explicitly set to `undefined`, the default value is used. This feature enhances the flexibility and readability of function declarations.
-
-### Example of Default Function Parameters:
-
-```javascript
-// Function with default parameters
-function greet(name = 'Guest', greeting = 'Hello') {
-  console.log(`${greeting}, ${name}!`);
-}
-
-// Calling the function with no arguments
-greet();  // Output: "Hello, Guest!"
-
-// Calling the function with one argument
-greet('John');  // Output: "Hello, John!"
-
-// Calling the function with both arguments
-greet('Alice', 'Hi');  // Output: "Hi, Alice!"
-```
-
-In this example, the `greet` function has two parameters (`name` and `greeting`), and default values are specified using the assignment operator (`=`). If no value is provided for a parameter, the default value is used. This simplifies the function call syntax and makes the code more readable.
-
-### Benefits of Default Function Parameters:
-
-1. **Improved Readability:**
-   Default parameters make function declarations more self-explanatory by explicitly specifying default values.
-
-2. **Reduced Boilerplate Code:**
-   Eliminates the need for conditional checks within the function body to handle undefined parameters.
-
-3. **Simplified Function Calls:**
-   Allows calling functions with fewer arguments, relying on default values when necessary.
-
-### Compatibility Note:
-   
-Default function parameters are part of ECMAScript 6 (ES6) and are supported in modern browsers and Node.js versions. However, if you need to ensure compatibility with older environments, it's essential to consider transpiling your code using tools like Babel or using other techniques to achieve similar functionality.
 - Explain the concept of "modules" introduced in ES6. How do they improve code organization and reusability in JavaScript?
 
 ES6 (ECMAScript 2015) introduced the concept of modules to JavaScript, providing a standardized way to organize, structure, and share code across different parts of an application. Modules address issues related to code organization, encapsulation, and reusability, making it easier to manage complex codebases. Here's an overview of how modules work and their benefits:
