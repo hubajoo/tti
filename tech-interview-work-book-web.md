@@ -792,7 +792,9 @@ fetchData();
 In this example, multiple requests are made sequentially using async/await, providing a clear and readable structure.
 
 In summary, while both `.then()` and `.catch()` and async/await can be used to handle asynchronous operations with `fetch`, async/await often leads to more readable and structured code, making it a preferred choice in modern JavaScript development.
+
 - What is asynchronicity in JavaScript? Name some typical use cases when asynchronicity is needed.
+  
 Asynchronicity in JavaScript refers to the ability of the language to execute code independently of the main program flow, allowing non-blocking operations. In asynchronous programming, certain tasks, such as I/O operations, network requests, or timers, can be initiated and run in the background, enabling the program to continue its execution without waiting for these tasks to complete.
 
 Typical use cases where asynchronicity is needed include:
