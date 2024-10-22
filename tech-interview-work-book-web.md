@@ -168,20 +168,6 @@ The spread operator (`...`) allows you to spread elements of an array or propert
    console.log(updatedObject);
    // { name: 'John', age: 31, city: 'New York' }
    ```
-
-### Combining Spread Operator with Rest Parameter:
-
-The spread operator can be used in conjunction with the rest parameter in function parameters to handle varying numbers of arguments more effectively.
-
-```javascript
-function sum(...numbers) {
-  return numbers.reduce((acc, num) => acc + num, 0);
-}
-
-const result = sum(1, 2, 3, 4, 5);
-console.log(result);  // 15
-```
-
 ### Benefits:
 
 1. **Immutability:**
